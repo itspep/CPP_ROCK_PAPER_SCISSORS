@@ -28,17 +28,17 @@ do
     else if((computer_choice==1 && player_choice==2)||(computer_choice==2 && player_choice==3)||(computer_choice==3 && player_choice==1))
     {
         cout<<"you won!"<<endl;
-        cout<<"you chose"<<choice[player_choice]<<"which beats what I chose "<<choice[computer_choice]<<endl;
+        cout<<"you chose "<<choice[player_choice]<<" which beats what I chose "<<choice[computer_choice]<<endl;
         player_total++;
     }
     else
     {
         cout<<"I win!\n";
-        cout<<"I chose "<<choice[computer_choice]<<"which beats what you chose "<<choice[player_choice]<<endl;
+        cout<<"I chose "<<choice[computer_choice]<<" which beats what you chose "<<choice[player_choice]<<endl;
         computer_total++;
     }
-} while (computer_total<5 || player_total<5);
-cout<<"Total points won by me "<<computer_total<<"compared to total points won by you "<<player_total<<endl;
+} while (computer_total<5 && player_total<5);
+cout<<"Total points won by me "<<computer_total<<" compared to total points won by you "<<player_total<<endl;
 if(computer_total>player_total)
 {
     cout<<"I am the champion!"<<endl;
